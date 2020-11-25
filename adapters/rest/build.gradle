@@ -1,0 +1,21 @@
+dependencies {
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    implementation project(":application")
+    implementation "org.cloudfoundry:cloudfoundry-client-reactor:$cfLibVersion"
+    implementation "org.cloudfoundry:cloudfoundry-operations:$cfLibVersion"
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'io.projectreactor.addons:reactor-extra:3.3.3.RELEASE'
+
+    testImplementation 'io.projectreactor:reactor-test'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.0.1'
+    testImplementation 'org.junit.platform:junit-platform-launcher:1.4.2'
+    testImplementation 'org.mockito:mockito-junit-jupiter:2.23.0'
+    testImplementation 'org.assertj:assertj-core:3.15.0'
+}
+
+
+test {
+    useJUnitPlatform()
+}

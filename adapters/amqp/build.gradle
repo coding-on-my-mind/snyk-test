@@ -1,0 +1,19 @@
+dependencies {
+    compileOnly "org.projectlombok:lombok"
+    annotationProcessor "org.projectlombok:lombok"
+    implementation project(":application")
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'
+    implementation "org.cloudfoundry:cloudfoundry-client-reactor:$cfLibVersion"
+    implementation 'org.springframework.cloud:spring-cloud-stream-reactive:2.2.1.RELEASE'
+    implementation 'javax.validation:validation-api'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.0.1'
+    testImplementation 'org.mockito:mockito-junit-jupiter:2.23.0'
+    testImplementation 'com.tngtech.archunit:archunit:0.9.3'
+    testImplementation 'org.junit.platform:junit-platform-launcher:1.4.2'
+    testImplementation 'org.assertj:assertj-core:3.15.0'
+}
+
+test {
+    useJUnitPlatform()
+}
