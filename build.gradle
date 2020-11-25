@@ -28,7 +28,7 @@ subprojects {
         set("project.pmd.ruleSetFiles", "config/pmd/pmd-ruleset.xml")
     }
 
-    group = "com.coding-on-my-mind"
+    group = "com.coding-on-my-mind.stackit"
     version = "0.0.1-SNAPSHOT"
 
     repositories {
