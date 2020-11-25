@@ -17,4 +17,13 @@ ignore:
     - '*':
         reason: we comply to EPL license
         expires: 2021-05-01T00:00:00.000Z
+  SNYK-JAVA-ORGPOSTGRESQL-571481:
+    - '*':
+        reason: for testing only
+        expires: 2021-04-30T00:00:00.000Z
+  SNYK-JAVA-ORGHIBERNATE-1041788:
+    - '*':
+        reason: for testing only
+        expires: 2021-04-30T00:00:00.000Z
 patch: {}
+version: v1.14.1
